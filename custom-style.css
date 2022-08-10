@@ -40,7 +40,7 @@ body {
 }
 
 .st-hotel-header {
-    align-items: flex-start !important;
+    align-items: center !important;
 }
 
 .old-price {
@@ -143,7 +143,7 @@ body {
 
 .custom-search {
     width: 100%;
-    background-color: rgb(132, 220, 255);
+    /* background-color: rgb(132, 220, 255); */
     height: 100px;
 }
 
@@ -158,4 +158,42 @@ body {
     position: -webkit-sticky !important;
     position: sticky !important;
     top: 10px !important;
+}
+
+.banner-red {
+    width: 100%;
+    border: 1px rgb(255, 150, 150) solid;
+    background-color: rgb(255, 233, 233);
+    border-radius: 12px;
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-green {
+    width: 100%;
+    border: 1px rgb(102, 185, 139) solid;
+    background-color: rgb(215, 255, 231);
+    border-radius: 12px;
+    height: 70px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-icon-block {
+    /* border: 1px solid black; */
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text-block {
+    /* border: 1px solid black; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
