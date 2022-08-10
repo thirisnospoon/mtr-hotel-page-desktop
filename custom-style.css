@@ -1,0 +1,161 @@
+body {
+    background-color: #F2F2F2 !important;
+}
+
+.tripadvisor {
+    margin-right: 90px !important;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.widget-box {
+    /* background-color: #F2F2F2 !important;; */
+}
+
+.transparent-background {
+    background-color: #F2F2F2 !important;
+
+}
+
+.transparent-background-color {
+    background: #F2F2F2 !important;
+
+}
+
+.tripadvisor-title {
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+
+}
+
+.tripadvisor-image {
+    margin-left: -10px;
+    margin-bottom: 0px;
+}
+
+.st-heading {
+    margin-top: -10px !important;
+}
+
+.st-hotel-header {
+    align-items: flex-start !important;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.villa-link {
+    cursor: pointer;
+    text-decoration: underline 2px #30D5C8;
+    color: #1D1D1F;
+
+    font-size: 16px;
+    /* color: #30D5C8 !important; */
+}
+
+.book-btn-custom {
+    width: 100% !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 
+.for-info {
+    mar
+} */
+
+.main-price {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.price-per {
+    margin-top: 10px !important;
+
+}
+
+.secure-now {
+    /* margin-top: 10; */
+}
+
+.hidden-villa-info-wrapper {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden-villa-info {
+    position: fixed;
+    background-color: white;
+    width: 80%;
+    height: 70vh;
+    margin-top: 100px
+}
+
+.villa-banner-header {
+    width: 100%;
+    height: 50px;
+    /* background-color: #9bfff7; */
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+
+
+}
+
+.villa-popup-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.close-btn {
+    width: 5%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/240px-OOjs_UI_icon_close.svg.png'); */
+}
+
+.close-img {
+    width: 30px;
+
+}
+
+
+.hotel-place-info {
+    margin-left: 30px;
+}
+
+.infor-heading {
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+.custom-search {
+    width: 100%;
+    background-color: rgb(132, 220, 255);
+    height: 100px;
+}
+
+.custom-price {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-content: space-between !important;
+}
+
+.sticky-element {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 10px !important;
+}
