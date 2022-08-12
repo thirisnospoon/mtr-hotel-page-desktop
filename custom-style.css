@@ -222,6 +222,7 @@ body {
 .custom-villa-card {
     border: 1px solid #d9d9d9;
     width: 100%;
+    border-radius: 5px;
     height: auto;
     display: flex;
     align-items: center;
@@ -367,4 +368,11 @@ body {
     /* border: 2px red solid; */
     width: 100%;
     
+}
+
+
+
+.selected-card {
+    border: 1px solid #43c2b7 !important;
+    box-shadow: 2px 2px 0px rgb(67 194 183 / 20%);
 }

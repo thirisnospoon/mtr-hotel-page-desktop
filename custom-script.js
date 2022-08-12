@@ -30,8 +30,13 @@ villaCards.forEach((card, index) => {
         for (button of bookButtons) {
             button.style.visibility = 'hidden';
         }
-        // bookButtons[index].classList.add('show-anim');
+
+        for (currentCard of villaCards) {
+            currentCard.classList.remove('selected-card');
+        }
+        
         bookButtons[index].style.visibility = 'visible';
+        card.classList.add('selected-card');
         bookButtons[index].style.opacity = '1';
     });
 });
@@ -61,3 +66,12 @@ function isInViewport(element) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+
+
+const price1 = 3300;
+const price2 = 3600;
+const price3 = 4200;
+
+const actualPrice = document.querySelector('.actual-villa-price');
+actualPrice.innerHTML = `<strong>£${price1}</strong><span style="font-size: 14px; color:rgb(95, 95, 95)"> / 7 nights</span>`;
