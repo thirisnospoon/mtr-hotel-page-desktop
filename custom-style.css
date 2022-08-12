@@ -3,11 +3,13 @@ body {
 }
 
 .tripadvisor {
-    margin-right: 90px !important;
+    margin-right: 30px !important;
     display: flex;
     flex-direction: column;
     align-content: flex-end;
     justify-content: flex-end;
+    margin-top: 20px;
+
 }
 
 .widget-box {
@@ -32,7 +34,8 @@ body {
 
 .tripadvisor-image {
     margin-left: -10px;
-    margin-bottom: 0px;
+    margin-bottom: -6px;
+    width: 130px;
 }
 
 .st-heading {
@@ -41,11 +44,14 @@ body {
 
 .st-hotel-header {
     align-items: center !important;
+    margin-bottom: 10px !important;
 }
 
 .old-price {
     text-decoration: line-through;
     font-size: 14px;
+    text-align: center;
+    margin-bottom: -5px;
 }
 
 .villa-link {
@@ -158,6 +164,7 @@ body {
     position: -webkit-sticky !important;
     position: sticky !important;
     top: 10px !important;
+    margin-top: -120px;
 }
 
 .banner-red {
@@ -197,3 +204,171 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.st-hotel-header {
+    width: 75%;
+}
+
+.dark-custom {
+    background-color: #494d55 !important;
+    border: 3px solid #43c2b7 !important;
+    border-radius: 10px !important;
+}
+
+.villa-card {
+    border: grey solid 1px;
+}
+
+.custom-villa-card {
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 20px 20px 0 0;
+}
+
+.villa-image-block {
+    /* border: 2px solid green; */
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.villa-info-block {
+    /* border: 2px solid red; */
+    width: 33%;
+    min-height: 280px;
+    box-sizing: border-box;
+    /* border-right: 1px solid #d9d9d9; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.villa-price-block {
+    /* border: 2px solid purple; */
+    width: 33%;
+    box-sizing: border-box;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.facilities-custom {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* border:rgb(102, 185, 139) solid 2px; */
+    align-content: flex-end;
+}
+
+.facilities-custom .item:not(:first-child) {
+    margin: 0 0 30px 30px;
+}
+
+.item {
+    /* margin: 0 0 30px 30px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.radio-price-form {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px green solid; */
+    width: 100%;
+}
+
+.book-btn-block {
+    /* border: #494d55 2px solid; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio-price-item {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    
+
+}
+
+.radio-price-button {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    /* border: red 2px solid; */
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.additional-price {
+    margin-top: 2px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.meal-type-text {
+    font-size: 1.15em;
+}
+
+.selected-meal {
+    background-color: rgb(48, 213, 200, 0.5);
+    border-radius: 10px;
+    border-bottom: none;
+   
+}
+
+.radio-label {
+    margin: 0;
+}
+
+.price-text-block { 
+    width: 70%;
+} 
+
+label > input[type='radio']:checked + **::before {
+    color: #30D5C8;
+    border-color: teal;
+}
+
+.guaranteed {
+    /* border: #494d55 2px solid; */
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+
+.btn-book {
+    background-color: #ff7701 !important;
+    visibility: hidden;
+}
+
+.custom-villa-card:hover .btn-book {
+    visibility: visible
+} 
+
+
+
+.special-info {
+    /* border: 2px red solid; */
+    width: 100%;
+    
+}
+
