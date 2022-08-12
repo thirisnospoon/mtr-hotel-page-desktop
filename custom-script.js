@@ -36,21 +36,21 @@ villaCards.forEach((card, index) => {
     });
 });
 
-window.addEventListener('scroll', event => {
-    for (let i = 0; i < bookButtons.length; i++) {
-        if (!isInViewport(bookButtons[i])) {
-            bookButtons[i].style.visibility = 'hidden';
-            bookButtons[i + 1].style.visibility = 'visible';
-        }
-        else {
-            for (n = i + 1; n < bookButtons.length; n++) {
-                bookButtons[n].style.visibility = 'hidden';
-            }
-        }
-    }
+// window.addEventListener('scroll', event => {
+//     for (let i = 0; i < bookButtons.length; i++) {
+//         if (!isInViewport(bookButtons[i])) {
+//             bookButtons[i].style.visibility = 'hidden';
+//             bookButtons[i + 1].style.visibility = 'visible';
+//         }
+//         else {
+//             for (n = i + 1; n < bookButtons.length; n++) {
+//                 bookButtons[n].style.visibility = 'hidden';
+//             }
+//         }
+//     }
 
 
-});
+// });
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
