@@ -228,6 +228,7 @@ body {
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 20px 20px 0 0;
+    background-color: white;
 }
 
 .villa-image-block {
@@ -241,7 +242,7 @@ body {
     width: 33%;
     min-height: 280px;
     box-sizing: border-box;
-    /* border-right: 1px solid #d9d9d9; */
+    border-right: 1px solid #d9d9d9;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -342,11 +343,6 @@ body {
     width: 70%;
 } 
 
-label > input[type='radio']:checked + **::before {
-    color: #30D5C8;
-    border-color: teal;
-}
-
 .guaranteed {
     /* border: #494d55 2px solid; */
     display: flex;
@@ -358,11 +354,12 @@ label > input[type='radio']:checked + **::before {
 .btn-book {
     background-color: #ff7701 !important;
     visibility: hidden;
+  
 }
 
-.custom-villa-card:hover .btn-book {
+/* .custom-villa-card:hover .btn-book {
     visibility: visible
-} 
+}  */
 
 
 
@@ -371,4 +368,3 @@ label > input[type='radio']:checked + **::before {
     width: 100%;
     
 }
-

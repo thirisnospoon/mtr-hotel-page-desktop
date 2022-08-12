@@ -19,3 +19,45 @@ popUp.addEventListener('click', event => {
         popUp.classList.add('hidden');
     }
 });
+
+
+
+const villaCards = document.querySelectorAll('.custom-villa-card');
+const bookButtons = document.querySelectorAll('.btn-book');
+
+villaCards.forEach((card, index) => {
+    card.addEventListener('mouseover', event => {
+        for (button of bookButtons) {
+            button.style.visibility = 'hidden';
+        }
+        // bookButtons[index].classList.add('show-anim');
+        bookButtons[index].style.visibility = 'visible';
+        bookButtons[index].style.opacity = '1';
+    });
+});
+
+window.addEventListener('scroll', event => {
+    for (let i = 0; i < bookButtons.length; i++) {
+        if (!isInViewport(bookButtons[i])) {
+            bookButtons[i].style.visibility = 'hidden';
+            bookButtons[i + 1].style.visibility = 'visible';
+        }
+        else {
+            for (n = i + 1; n < bookButtons.length; n++) {
+                bookButtons[n].style.visibility = 'hidden';
+            }
+        }
+    }
+
+
+});
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
