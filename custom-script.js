@@ -68,10 +68,29 @@ function isInViewport(element) {
 }
 
 
+// const priceList = [{
+//         'All Inclusive': 3300,
+//         'Half Board': 3600,
+//         'All Disclusive': 4200
+//     },
+//     {
+        
+//         'Half Board': 3600,
+//         'All Disclusive': 4200
+//     }
 
-const price1 = 3300;
-const price2 = 3600;
-const price3 = 4200;
+// ];
 
-const actualPrice = document.querySelector('.actual-villa-price');
-actualPrice.innerHTML = `<strong>£${price1}</strong><span style="font-size: 14px; color:rgb(95, 95, 95)"> / 7 nights</span>`;
+// const actualPrice = document.querySelector('.actual-villa-price');
+// const radioPriceForm = document.querySelector('.radio-price-form');
+
+// priceList.forEach(priceElement => {
+//     radioPriceForm.innerHTML += `<div class="radio-price-item">
+//                                     <div class="radio-price-button">
+//                                         <input style="margin-right: 2px;" name="meals" id="radio-1" type="radio" value="${priceElement.}">
+//                                         <label for="radio-1" class="radio-label"><span class="meal-type-text">All Inclusive</span></label>
+//                                     </div>
+//                                     <p class="additional-price">Included</p>
+//                                 </div>`
+// });
+// radioPriceForm.innerHTML += 
