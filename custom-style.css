@@ -200,14 +200,14 @@ body {
 .banner-text-block {
     /* border: 1px solid black; */
     width: 80%;
+    height: a;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.st-hotel-header {
-    width: 75%;
-}
+.st-hotel-header {}
 
 .dark-custom {
     background-color: #494d55 !important;
@@ -233,26 +233,33 @@ body {
 }
 
 .villa-image-block {
-    /* border: 2px solid green; */
-    width: 33%;
+    width: 50%;
+
     box-sizing: border-box;
+    background-image: url('https://assets.cntraveller.in/photos/60ed39413e5e0b9dfcd10fa1/master/pass/MLG_939_print-medium.jpg');
+
 }
 
+.villa-image {
+    object-fit:cover;
+    width: 100%;
+}
+
+
 .villa-info-block {
-    /* border: 2px solid red; */
-    width: 33%;
+
+    width: 50%;
     min-height: 280px;
     box-sizing: border-box;
     border-right: 1px solid #d9d9d9;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 40px;
     justify-content: space-between;
 }
 
 .villa-price-block {
-    /* border: 2px solid purple; */
     width: 33%;
     box-sizing: border-box;
     min-height: 280px;
@@ -271,7 +278,7 @@ body {
 }
 
 .facilities-custom .item:not(:first-child) {
-    margin: 0 0 30px 30px;
+    margin: 0 0 60px 60px;
 }
 
 .item {
@@ -305,7 +312,13 @@ body {
     border-bottom: 1px solid #d9d9d9;
     margin-top: 3px;
     margin-bottom: 6px;
-    
+
+
+}
+
+.meal-selection-block {
+    right: auto;
+    width: 80%;
 
 }
 
@@ -333,21 +346,23 @@ body {
     background-color: rgb(48, 213, 200, 0.5);
     border-radius: 10px;
     border-bottom: none;
-   
+
 }
 
 .radio-label {
     margin: 0;
 }
 
-.price-text-block { 
+.price-text-block {
     width: 70%;
-} 
+}
 
 .guaranteed {
     /* border: #494d55 2px solid; */
     display: flex;
     width: 100%;
+    margin-bottom: 18px;
+    margin-top: 0;
     /* justify-content: center; */
     /* align-content: center; */
 }
@@ -355,7 +370,7 @@ body {
 .btn-book {
     background-color: #ff7701 !important;
     visibility: hidden;
-  
+
 }
 
 /* .custom-villa-card:hover .btn-book {
@@ -367,7 +382,7 @@ body {
 .special-info {
     /* border: 2px red solid; */
     width: 100%;
-    
+
 }
 
 
@@ -377,6 +392,121 @@ body {
     box-shadow: 2px 2px 0px rgb(67 194 183 / 20%);
 }
 
-.from-text {
+.from-text {}
+
+
+.gallery-custom {
+    width: 100%;
+    height: auto;
+    /* border: 1px black solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-pic-wrapper {
+
+    /* border: solid 2px red; */
+    width: 12%;
+}
+
+
+.center-pic-wrapper {
+
+    /* border: solid 2px green; */
+    width: 75%;
+}
+
+
+.right-pic-wrapper {
+
+    /* border: solid 2px purple; */
+    width: 12%;
+}
+
+.center-pic {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.side-pic {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.custom-search-wrap {
+    border: 1px solid #d7dce3;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-block {
+    border-right: 1px solid #d7dce3;
+    width: 33.3%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+.guests-block {
+    border-right: 1px solid #d7dce3;
+    width: 33.3%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+.button-block {
+    width: 33.3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.icon-block {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
 }
+
+.text-block {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.edit-search-button {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: black solid 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+}
+
+.search-container {
+    width: 100% !important;
+    /* background-color: #30D5C8; */
+    margin-left: auto;
+    margin-right: auto;
+    /* position: fixed; */
+}
+
+.container-villas {}

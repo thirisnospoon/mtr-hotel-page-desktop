@@ -3,41 +3,35 @@ const villaBtn = document.querySelector('.villa-link');
 const closeBtn = document.querySelector('.close-btn');
 const popupContainer = document.querySelector('.hidden-villa-info');
 
-villaBtn.addEventListener('click', event => {
-    event.preventDefault();
-    popUp.classList.remove('hidden');
-});
+// villaBtn.addEventListener('click', event => {
+//     event.preventDefault();
+//     popUp.classList.remove('hidden');
+// });
 
-closeBtn.addEventListener('click', event => {
-    event.preventDefault();
-    popUp.classList.add('hidden');
-});
+// closeBtn.addEventListener('click', event => {
+//     event.preventDefault();
+//     popUp.classList.add('hidden');
+// });
 
-popUp.addEventListener('click', event => {
-    event.preventDefault();
-    if (event.target == popUp) {
-        popUp.classList.add('hidden');
-    }
-});
+// popUp.addEventListener('click', event => {
+//     event.preventDefault();
+//     if (event.target == popUp) {
+//         popUp.classList.add('hidden');
+//     }
+// });
 
 
 
 const villaCards = document.querySelectorAll('.custom-villa-card');
-const bookButtons = document.querySelectorAll('.btn-book');
 
 villaCards.forEach((card, index) => {
     card.addEventListener('mouseover', event => {
-        for (button of bookButtons) {
-            button.style.visibility = 'hidden';
-        }
-
+       
         for (currentCard of villaCards) {
             currentCard.classList.remove('selected-card');
         }
-        
-        bookButtons[index].style.visibility = 'visible';
+    
         card.classList.add('selected-card');
-        bookButtons[index].style.opacity = '1';
     });
 });
 
@@ -57,15 +51,15 @@ villaCards.forEach((card, index) => {
 
 // });
 
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
+// function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+// }
 
 
 // const priceList = [{
@@ -94,3 +88,13 @@ function isInViewport(element) {
 //                                 </div>`
 // });
 // radioPriceForm.innerHTML += 
+
+
+const villaCardList = document.querySelectorAll('.custom-villa-card');
+const villaImages = document.querySelectorAll('.villa-image');
+
+villaImages.forEach((villaImage, index) => {
+    villaImage.style.height = villaCardList[index].clientHeight + "px";
+});
+
+
