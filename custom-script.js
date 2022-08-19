@@ -24,23 +24,22 @@ popUp.addEventListener('click', event => {
 
 const villaCards = document.querySelectorAll('.custom-villa-card');
 const mainPrice = document.querySelector('.main-price');
-let mouseOverCount = 0;
+const villaNameContainer = document.querySelector('.villa-link');
+
+const priceList = [];
+for (let i = 0; i < villaCards.length; i++) {
+    priceList.push(Math.floor(Math.random() * (2000 - 100 + 1) + 100));
+}
 
 villaCards.forEach((card, index) => {
     card.addEventListener('mouseenter', event => {
-        mouseOverCount++;
-        console.log(mouseOverCount);
         for (currentCard of villaCards) {
             currentCard.classList.remove('selected-card');
         }
         card.classList.add('selected-card');
-        if (mouseOverCount == 1) {
-            mainPrice.innerHTML = `<strong>£${Math.floor(Math.random() * (2000 - 100 + 1) + 100)}</strong>`;
-        }
-        
-    });
-    card.addEventListener('mouseleave', event => {
-        mouseOverCount = 0;
+            villaNameContainer.innerHTML = event.target.querySelector('.st-link').innerHTML + '<br><span>Breakfast only</span>';
+            mainPrice.innerHTML = `<strong>£${priceList[index]}</strong>`;
+
     });
 });
 
@@ -95,11 +94,4 @@ window.addEventListener('scroll', event => {
         searchBlock.classList.remove('sticky-search');
         searchWindow.classList.remove('noborder');
     }
-});
-
-
-
-
-window.addEventListener('scroll', event => {
-
 });
