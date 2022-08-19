@@ -466,7 +466,7 @@ body {
 
 .date-block {
     border-right: 1px solid #d7dce3;
-    width: 33.3%;
+    width: 38.75%;
     box-sizing: border-box;
     display: flex;
 }
@@ -474,14 +474,14 @@ body {
 
 .guests-block {
     border-right: 1px solid #d7dce3;
-    width: 33.3%;
+    width: 38.75%;
     box-sizing: border-box;
     display: flex;
 }
 
 
 .button-block {
-    width: 33.3%;
+    width: 22.5%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -506,8 +506,8 @@ body {
 }
 
 .edit-search-button {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;

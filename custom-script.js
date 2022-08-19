@@ -96,3 +96,10 @@ window.addEventListener('scroll', event => {
         searchWindow.classList.remove('noborder');
     }
 });
+
+
+
+
+window.addEventListener('scroll', event => {
+
+});
