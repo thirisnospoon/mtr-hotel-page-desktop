@@ -527,3 +527,7 @@ body {
     margin-right: auto;
     /* position: fixed; */
 }
+
+.sold-out {
+    background-color: rgb(255, 225, 225);
+}
